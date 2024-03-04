@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>구구단을 외자</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>구구단 출력 프로그램 🎱</h1>
+    <div class="inputField">
+      <label for="">몇 단을 출력할까요? 아래 칸에 숫자를 입력해 주세요</label>
+      <input
+        type="text"
+        id="inputValue"
+        onchange="inputValueChange()"
+        onkeyup="showRes(event)"
+      />
+      <button type="button" id="button">출력하기</button>
+      <div id="template"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
